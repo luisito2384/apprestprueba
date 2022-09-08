@@ -24,5 +24,18 @@ public class ApiRestApplication {
         logger.error("Oops! We have an Error. OK");
         logger.fatal("Damn! Fatal error. Please fix me.");
     }
+	/*@EnableWebSecurity
+	@Configuration
+	class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+		@Override
+		protected void configure(HttpSecurity http) throws Exception {
+			http.csrf().disable()
+				.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
+				.authorizeRequests()
+				.antMatchers(HttpMethod.GET, "/api/v2/token").permitAll()
+				.anyRequest().authenticated();
+		}
+	}*/
 
 }

@@ -15,7 +15,7 @@ import java.util.UUID;
 
 @Component 
 @WebFilter( filterName = "mdcFilter", urlPatterns = { "/*" } )
-public class MDCFilter implements Filter {
+public class MDCFilter implements Filter  {
  
     @Override
     public void destroy() {
