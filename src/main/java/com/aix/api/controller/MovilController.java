@@ -21,8 +21,10 @@ public class MovilController {
 	@GetMapping("/movil")
 	public ResponseEntity<?> getAllMovil(){
 		Map<String, Object> response = new HashMap<String, Object>();
+		System.out.print("Pasa request");
 		MovilEntity moviles = new MovilEntity();
 		response.put("moviles", moviles);
+		System.out.print("Pasa response");
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
 	@PostMapping("/movil")
