@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://desa:pass@ds163905.mlab.com:63905/heroku_xjh8wx5b
