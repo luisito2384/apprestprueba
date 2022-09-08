@@ -1,4 +1,4 @@
-package com.aix.api.dao.entity;
+package com.genesys.api.dao.entity;
 
 
 public class MovilEntity {

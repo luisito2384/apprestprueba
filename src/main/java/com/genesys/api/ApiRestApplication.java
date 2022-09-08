@@ -1,4 +1,4 @@
-package com.aix.api;
+package com.genesys.api;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,11 +1,11 @@
-package com.aix.api.service;
+package com.genesys.api.service;
 
 
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.aix.api.dao.entity.MovilEntity;
+import com.genesys.api.dao.entity.MovilEntity;
 
 
 @Repository
