@@ -30,7 +30,7 @@ public class MDCFilter implements Filter  {
     public void doFilter( final ServletRequest request, 
     			final ServletResponse response, final FilterChain chain )
         throws IOException, ServletException {
-    	logger.info("conversionId: " +request.getParameter("conversionId"));
+    	//logger.info("conversionId: " +request.getParameter("conversionId"));
         MDC.put( "UUid", UUID.randomUUID().toString());
  
         try {
