@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.genesys.api.dao.entity.Menssage;
 import com.genesys.api.dao.entity.MovilEntity;
 
 
@@ -40,12 +41,11 @@ public class MovilController {
 		logger.info("Token creado: "+moviles.getToken());
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
-	@PostMapping("/movil")
-	public ResponseEntity<?> save(@RequestBody MovilEntity movil){
+	@PostMapping("/mesagge")
+	public ResponseEntity<?> save(@RequestBody Menssage movil){
 		Map<String, Object> response = new HashMap<String, Object>();
-		MovilEntity movilSave = new MovilEntity();
-		movilSave.setId(UUID.randomUUID().toString());
-		response.put("Token", movilSave);
+		logger.info(movil.toString());
+		response.put("OK", "");
 
 		return new ResponseEntity<Map<String, Object>>(response, HttpStatus.OK);
 	}
